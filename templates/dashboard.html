@@ -1,0 +1,14 @@
+<!-- Dashboard  -->
+
+{% extends "base.html" %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+  <div class="text-center">
+    <h1 class="mb-4">Dashboard</h1>
+    <p>Bienvenido, <strong>{{ name }}</strong>!</p>
+    <p>Tu rol es: <span class="badge bg-info">{{ role }}</span></p>
+    <a href="{{ url_for('logout') }}" class="btn btn-danger mt-3">Cerrar Sesión</a>
+  </div>
+{% endblock %}
